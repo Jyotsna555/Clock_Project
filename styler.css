@@ -1,11 +1,64 @@
 body{
-    background-color: midnightblue;
+    background-color: rgb(0, 0, 27);
 }
-.container{
-background-color: rgb(4, 4, 43);
+
+.date_container{
+    background-color: rgb(4, 4, 43);
+    width: 20%;
+    float: center;
+    margin-left:39%;
+    
+} 
+.date_container p{
+        color: oldlace;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px ;
+        text-align: center;
+        border-color: midnightblue;
+        border-style: double;
 }
-.container p{
+.date_container span{
     color: oldlace;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 5ch ;
+    font-size: 30px ;
+}
+
+
+.time_container{
+    background-color: rgb(4, 4, 43);
+    width: 15%;
+    float: center;
+    margin-left:42%;
+}    
+.time_container p{
+        color: oldlace;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 50px ;
+        text-align: center;
+        border-color: midnightblue;
+        border-style: double;
+}
+.time_container span{
+    color: oldlace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px ;
+}
+
+.alarm_container{
+    border-color: midnightblue;
+    border-style: double;
+    width:50%;
+    margin-left:25%;
+}
+.alarm_container p{
+    color: oldlace;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px ;
+    /* text-align: center; */
+}
+.alarm_form{
+    border-color: midnightblue;
+    border-style: double;
+    width:90%;
+    margin-left:4%;
 }

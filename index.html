@@ -13,32 +13,37 @@
 
 <body>
     <ul>
-        <div class="container">
-            <p id="date">Date</p>
-        </div>
-    
-        <div class="container">
-            <p id="month">Month</p>
-        </div>
-    
-        <div class="container">
-            <p id="year">Year</p>
+        <div class="date_container">
+            <p><span id="day">Day</span>, <span id="date">DD</span> <span id="month">MM</span> <span id="year">YY</span></p>
         </div>
 
-        <div class="container">
-            <p id="hour">Hour</p>
-        </div>
-
-        <div class="container">
-            <p id="minute">Minute</p>
-        </div>
-
-        <div class="container">
-            <p id="second">Second</p>
+        <div class="time_container">
+            <p><span id="hour"></span>:<span id="minute"></span>:<span id="second"></span> </p>
         </div>
     </ul>
 
+    <div class="alarm_container">
+        <p class="alarm_heading">
+            Alarms for today:
+        </p>
+        
+        <div class="alarm_form">
+            <form>
+                <input id="form_hours" type="text" placeholder="Hours">
+                <input id="form_minutes" type="text" placeholder="Minutes">
+                <input id="form_ampm" type="text" placeholder="AM/PM">
+                <br>
+                <button>Create Alarm</button>
 
+            </form>
+        </div>
+
+        <ul>
+
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="javas.js"></script>
 </body>
 </html>
