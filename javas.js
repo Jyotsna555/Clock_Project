@@ -62,6 +62,7 @@ var audio = new Audio('ringtone.mp3');
 function stopAlarmFunction(){
     $("button").remove(".stopButton");
     audio.pause();
+    audio.currentTime = 0;
     
 }
 
@@ -80,7 +81,6 @@ function ringBell(){
 
 }
 
-//$("status_alarm").append(<button id="stop_button">STOP</button>);
 var a=$("button").attr("class");
 console.log(a);
 
@@ -137,7 +137,6 @@ function setAlarmFunction(e){
 
         console.log(timetoring);
         setTimeout(ringBell, timetoring);
-        // $("button").remove('#stopButton');
 
     }
 }
