@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Clock
+  <title>Clock and Alarm
   </title>
 
   <link rel="stylesheet" href="styler.css">
@@ -18,28 +18,32 @@
         </div>
 
         <div class="time_container">
-            <p><span id="hour"></span>:<span id="minute"></span>:<span id="second"></span> </p>
+            <p><span id="hour"></span>:<span id="minute"></span>:<span id="second"></span> <span id="ampm"></span> </p>
         </div>
     </ul>
 
     <div class="alarm_container">
         <p class="alarm_heading">
-            Alarms for today:
+            Alarm for today:
         </p>
         
         <div class="alarm_form">
+            <br>
             <form>
-                <input id="form_hours" type="text" placeholder="Hours">
-                <input id="form_minutes" type="text" placeholder="Minutes">
+                <input id="form_hours" type="number" min="1" max="12" placeholder="Hours (1-12)">
+                <input id="form_minutes" type="number" min="0" max="59" placeholder="Minutes (0-59)">
                 <input id="form_ampm" type="text" placeholder="AM/PM">
-                <br>
-                <button>Create Alarm</button>
-
+                <input id="form_date" type="text" placeholder="Date">
+                <br><br>
+                <button id="setAlarm">Set Alarm</button>
             </form>
         </div>
 
         <ul>
-
+            <div class="alarm_list">
+                <p id="status_alarm">No alarm created.</p>
+                <!-- <button class="stopButton">STOP</button> -->
+            </div>
         </ul>
     </div>
 
